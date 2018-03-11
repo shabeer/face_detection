@@ -18,6 +18,6 @@ http://localhost:5000/detect_faces/?image_url=URL
 For example:
 http://localhost:5000/detect_faces/?image_url=https://upload.wikimedia.org/wikipedia/commons/a/a4/Chaplin_The_Immigrant.jpg
 
-![Identified faces are highlight with green rectangle](../blob/master/charlie_chaplin.jpg?raw=true)
+![Identified faces are highlight with green rectangle](master/charlie_chaplin.jpg?raw=true)
 
 image_url starting with file:// are not allowed to avoid security concerns.
