@@ -1,0 +1,15 @@
+<!doctype html>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<title>Hello from Face Detection API</title>
+{% if image_filename %}
+  <h1>Here's the image with faces identified</h1>
+    <img style="max-height:1000px; max-width:1000px; height:auto; width:auto"
+         src="{{image_filename}}?ver={{random_number}}"
+         alt="Image could not be found"/>
+{% else %}
+  <h2>Please provide a valid input image using http://localhost:5000/detect_faces/?image_url=URL</h2>
+  <h4>For eg: http://localhost:5000/detect_faces/?image_url=https://upload.wikimedia.org/wikipedia/commons/a/a4/Chaplin_The_Immigrant.jpg</h4>
+  <h5>image_url starting with file:// are not allowed to avoid security concerns</h5>
+{% endif %}
